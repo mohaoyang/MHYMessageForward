@@ -2,8 +2,8 @@
 //  MHYMessageForwardUITests.m
 //  MHYMessageForwardUITests
 //
-//  Created by jshtmhy on 2019/2/11.
-//  Copyright © 2019年 jshtmhy. All rights reserved.
+//  Created by jshtmhy on 2018/2/11.
+//  Copyright © 2018年 jshtmhy. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

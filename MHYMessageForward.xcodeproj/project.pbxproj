@@ -15,6 +15,9 @@
 		16212AEC22115C970035C5ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212AEB22115C970035C5ED /* main.m */; };
 		16212AF622115C970035C5ED /* MHYMessageForwardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212AF522115C970035C5ED /* MHYMessageForwardTests.m */; };
 		16212B0122115C970035C5ED /* MHYMessageForwardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212B0022115C970035C5ED /* MHYMessageForwardUITests.m */; };
+		16212B1122115CF00035C5ED /* MHYRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212B1022115CF00035C5ED /* MHYRuntimeTool.m */; };
+		16212B172211615F0035C5ED /* MHYPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212B162211615F0035C5ED /* MHYPeople.m */; };
+		16212B1D221168310035C5ED /* keepBackPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 16212B1C221168310035C5ED /* keepBackPeople.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		16212AFC22115C970035C5ED /* MHYMessageForwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHYMessageForwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16212B0022115C970035C5ED /* MHYMessageForwardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHYMessageForwardUITests.m; sourceTree = "<group>"; };
 		16212B0222115C970035C5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16212B0F22115CF00035C5ED /* MHYRuntimeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHYRuntimeTool.h; sourceTree = "<group>"; };
+		16212B1022115CF00035C5ED /* MHYRuntimeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHYRuntimeTool.m; sourceTree = "<group>"; };
+		16212B152211615F0035C5ED /* MHYPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHYPeople.h; sourceTree = "<group>"; };
+		16212B162211615F0035C5ED /* MHYPeople.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHYPeople.m; sourceTree = "<group>"; };
+		16212B1B221168310035C5ED /* keepBackPeople.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keepBackPeople.h; sourceTree = "<group>"; };
+		16212B1C221168310035C5ED /* keepBackPeople.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keepBackPeople.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,15 @@
 		16212ADB22115C950035C5ED /* MHYMessageForward */ = {
 			isa = PBXGroup;
 			children = (
+				16212B0E22115CBB0035C5ED /* tool */,
 				16212ADC22115C950035C5ED /* AppDelegate.h */,
 				16212ADD22115C960035C5ED /* AppDelegate.m */,
 				16212ADF22115C960035C5ED /* ViewController.h */,
 				16212AE022115C960035C5ED /* ViewController.m */,
+				16212B152211615F0035C5ED /* MHYPeople.h */,
+				16212B162211615F0035C5ED /* MHYPeople.m */,
+				16212B1B221168310035C5ED /* keepBackPeople.h */,
+				16212B1C221168310035C5ED /* keepBackPeople.m */,
 				16212AE222115C960035C5ED /* Main.storyboard */,
 				16212AE522115C970035C5ED /* Assets.xcassets */,
 				16212AE722115C970035C5ED /* LaunchScreen.storyboard */,
@@ -130,6 +144,15 @@
 				16212B0222115C970035C5ED /* Info.plist */,
 			);
 			path = MHYMessageForwardUITests;
+			sourceTree = "<group>";
+		};
+		16212B0E22115CBB0035C5ED /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				16212B0F22115CF00035C5ED /* MHYRuntimeTool.h */,
+				16212B1022115CF00035C5ED /* MHYRuntimeTool.m */,
+			);
+			path = tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +288,9 @@
 				16212AE122115C960035C5ED /* ViewController.m in Sources */,
 				16212AEC22115C970035C5ED /* main.m in Sources */,
 				16212ADE22115C960035C5ED /* AppDelegate.m in Sources */,
+				16212B172211615F0035C5ED /* MHYPeople.m in Sources */,
+				16212B1D221168310035C5ED /* keepBackPeople.m in Sources */,
+				16212B1122115CF00035C5ED /* MHYRuntimeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHYMessageForward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHYMessageForward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
